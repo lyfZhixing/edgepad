@@ -1,5 +1,7 @@
 # EdgePad · 触控板边缘手势
 
+**简体中文** ｜ [English](README.en.md)
+
 给 Windows 精准触摸板（Precision Touchpad）补上系统没给的边缘手势：**边缘滑动、角落双击、五指拖动、双指画 L/X**，
 全部从触控板本身读出来，不依赖厂商驱动，也不改系统设置。
 
