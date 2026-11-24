@@ -1,0 +1,26 @@
+<Window x:Class="EdgePad.MiniWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:EdgePad"
+        Title="EdgePad" Icon="app.ico"
+        Width="400" Height="310" MinWidth="300" MinHeight="220"
+        WindowStyle="ToolWindow" ShowInTaskbar="False" Topmost="True"
+        ResizeMode="CanResizeWithGrip"
+        Background="{StaticResource Bg}">
+  <Grid Margin="10">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+
+    <Border Background="{StaticResource Panel}" CornerRadius="10" Padding="6">
+      <local:PadView x:Name="Pad"/>
+    </Border>
+
+    <DockPanel Grid.Row="1" Margin="2,9,2,0" LastChildFill="False">
+      <TextBlock x:Name="TxtMetrics" DockPanel.Dock="Left" Foreground="{StaticResource Dim}"
+                 FontSize="11" VerticalAlignment="Center"/>
+      <Button x:Name="BtnExpand" DockPanel.Dock="Right" Content="展开" Padding="12,3" FontSize="11"/>
+    </DockPanel>
+  </Grid>
+</Window>

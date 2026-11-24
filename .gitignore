@@ -1,0 +1,20 @@
+# 构建产物
+bin/
+obj/
+publish/
+
+# 运行日志
+*.log
+
+# 自检 / 测量输出
+selftest.txt
+patterntest.txt
+migratetest.txt
+clicktest.txt
+perftest.txt
+mediatest.txt
+startuptest.txt
+dbgtrace.txt
+
+# 临时截图
+docs/tmp-*.png
